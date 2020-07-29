@@ -68,7 +68,7 @@ app.delete('/repositories/:id', (request, response) => {
 });
 
 app.post('/repositories/:id/like', (request, response) => {
-  // Route Params
+  // Route params
   const { id } = request.params;
 
   const repositoryIndex = checkIfTheRepositoryExists(id);
